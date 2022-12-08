@@ -1,23 +1,50 @@
-<html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <base href="/">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <title></title>
+<!DOCType html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<base href="/">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Vanilla Audio Player</title>
 
-  <meta name="title" content="" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="revisit-after" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="revisit-after" content="" />
 
-  <!-- HeaderSetter > JS Libraries -->
+<!-- HeaderSetter > JS Libraries -->
+<!-- HeaderSetter > CSS Libraries -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Music Player</h1>
+
+  <div class="music-container">
+    <div class="music-info">
+      <h4 id="title">Connan Mockassin - Quadropuss Island</h4>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <audio src="./music/SOUL 04 Quadropuss Island.mp3" id="audio"></audio>
+    <div class="img-container">
+      <img src="./images/connan.jpg" alt="music-cover" id="cover" />
+    </div>
+    <div class="navigation">
+      <button id="prev" class="action-bnt">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="action-bnt action-btn-big">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="action-bnt">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+  </div>
   <script src="main.js"></script>
-  <!-- HeaderSetter > CSS Libraries -->
-  <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-  </body>
+</body>
 </html>
